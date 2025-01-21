@@ -1,0 +1,17 @@
+[general]
+name=LayerShifter
+qgisMinimumVersion=3.16
+description=Створює зміщену систему координат, для шару
+version=0.1
+author=Стьопа
+email=brych92@gmail.com
+about=	Створює зміщену систему координат, для шару
+		
+tracker=https://github.com/brych92/KL_Tools_bar/issues
+repository=https://github.com/brych92/KL_Tools_bar
+icon=icon.png
+experimental=true
+homepage=https://github.com/brych92/KL_Tools_bar
+changelog=
+ Version 0.1:
+ * Альфа
