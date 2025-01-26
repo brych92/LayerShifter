@@ -25,7 +25,19 @@ def get_desktop_path():
     else:
         raise NotImplementedError(f"Unsupported OS: {system}")
 
-def zipdir(path, ziph):
+def get_version_from_metadata():
+    '''
+    get version form metadata.txt in current folder
+    '''
+    try:
+        with open("metadata.txt", "r") as f:
+            for line in f:
+                if line.startswith("version="):
+                    return "_"+line.split("=")[1].strip()
+    except IOError:
+        return ""
+
+def zipdir(path, ziph, folder_name):
     # ziph is zipfile handle
     print(path)
     for root, dirs, files in os.walk(path):
@@ -34,7 +46,7 @@ def zipdir(path, ziph):
         for file in files:
             if file != '.gitignore' and file != 'make.py':
                 file_path = os.path.join(root, file)
-                ziph.write(file_path, os.path.relpath(file_path, path))
+                ziph.write(file_path, os.path.join(folder_name, os.path.relpath(file_path, path)))
 
 if __name__ == '__main__':
     cwd = os.getcwd()
@@ -42,11 +54,11 @@ if __name__ == '__main__':
     desktop_path = get_desktop_path()
     if not os.path.exists(desktop_path):
         print(f"Desktop path does not exist")
-    
+    version = get_version_from_metadata()
     folder_name = os.path.basename(cwd)
-    zip_file_path = os.path.join(desktop_path, f'{folder_name}.zip')
+    zip_file_path = os.path.join(desktop_path, f'{folder_name}{version}.zip')
     zipf = zipfile.ZipFile(zip_file_path, 'w', zipfile.ZIP_DEFLATED)
-    zipdir(cwd, zipf)
+    zipdir(cwd, zipf, folder_name)
     
     zipf.close()
 
