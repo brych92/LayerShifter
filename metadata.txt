@@ -1,17 +1,57 @@
 [general]
-name=LayerShifter
+name=Layer CRS Shifter
 qgisMinimumVersion=3.16
-description=Створює зміщену систему координат, для шару
+description=Coordinate System Shift for Layer
+description[uk]=Зміщення Системи координат шару
 version=0.1
 author=Стьопа
 email=brych92@gmail.com
-about=	Створює зміщену систему координат, для шару
-		
-tracker=https://github.com/brych92/KL_Tools_bar/issues
-repository=https://github.com/brych92/KL_Tools_bar
-icon=icon.png
+about=  Layer CRS Shifter is a handy tool developed for visual alignment of vector, raster layers and basemaps. The plugin allows you to create an alternative coordinate system for a layer with the ability to shift it by a specified distance along the X and Y axes.
+
+    Main features:
+     - Supports different types of layers: raster images, raster tiles (XYZ, WMTS), vector layers, vector tiles, WMS, WFS.
+     - Works with all metric coordinate systems, excluding geographic.
+     - Shifts the layer without modifying the original data.
+     - Allows you to return the layer to its original position.
+
+    The plugin is useful for:
+     - Visual analysis of cartographic data.
+     - Approximate alignment of layers created in different coordinate systems.
+     - Thematic mapping and visualization.
+
+    Features:
+     - Simple and intuitive interface for precise shift settings.
+     - High precision of work, minimum shift step 1cm
+
+    The plugin was developed within the "Open spatial planning tools for Ukraine" project.
+	Find us in the JD Help chat on Telegram: https://t.me/+eq7gtxjTXYBjZmUy
+
+about[uk]=  Layer CRS Shifter — інструмент, розроблений для візуального суміщення векторних, растрових шарів та підкладок. Плагін дозволяє створювати альтернативну систему координат для шару з можливістю його зміщення на задану відстань по осях X та Y.
+
+    Основні можливості:
+     - Підтримка різних типів шарів: растрові зображення, растрові плитки (XYZ, WMTS), векторні шари, векторні плитки, WMS, WFS.
+     - Робота з усіма метричними системами координат, не включаючи географічні.
+     - Зміщення шару без модифікації вихідних даних.
+     - Можливість повернення шару у вихідне положення.
+
+    Плагін корисний при:
+     - Візуальному аналізі картографічних даних.
+     - Приблизному суміщенні шарів, створених у різних системах координат.
+     - Створенні тематичних карт та викопіювань.
+
+    Особливості:
+     - Простий та інтуїтивний інтерфейс для точного налаштування зміщення.
+     - Порівняно висока точність роботи, мінімальний крок зміщення 1см
+
+    Плагін розроблено в рамках проекту "Відкриті інструменти просторового планування для України".
+	Шукайте нас в JD Help чаті в Telegram: https://t.me/+eq7gtxjTXYBjZmUy
+
+
+tracker=https://github.com/brych92/LayerShifter/issues
+repository=https://github.com/brych92/LayerShifter
+icon=pl_icon.png
 experimental=true
-homepage=https://github.com/brych92/KL_Tools_bar
+homepage=https://github.com/brych92/LayerShifter
 changelog=
  Version 0.1:
- * Альфа
+ * Реліз для тестування

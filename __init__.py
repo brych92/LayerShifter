@@ -1,3 +1,3 @@
-def classFactory(iface):  # pylint: disable=invalid-name
-    from .run import KL_Search_bar
-    return KL_Search_bar(iface)
+def classFactory(iface):
+    from .layer_shifter import layerShifter
+    return layerShifter(iface)
