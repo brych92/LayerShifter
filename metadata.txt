@@ -1,11 +1,13 @@
 [general]
 name=Layer CRS Shifter
-qgisMinimumVersion=3.16
+
 description=Coordinate System Shift for Layer
 description[uk]=Зміщення Системи координат шару
 version=0.1
-author=Стьопа
-email=brych92@gmail.com
+
+experimental=True
+tags=CRS, Layer, Coordinate System, Shift, Displace, Align, Mapping, Visualization, Spatial Analysis, Cartography
+
 about=  Layer CRS Shifter is a handy tool developed for visual alignment of vector, raster layers and basemaps. The plugin allows you to create an alternative coordinate system for a layer with the ability to shift it by a specified distance along the X and Y axes.
 
     Main features:
@@ -46,12 +48,15 @@ about[uk]=  Layer CRS Shifter — інструмент, розроблений �
     Плагін розроблено в рамках проекту "Відкриті інструменти просторового планування для України".
 	Шукайте нас в JD Help чаті в Telegram: https://t.me/+eq7gtxjTXYBjZmUy
 
-
+author=Стьопа
+email=brych92@gmail.com
 tracker=https://github.com/brych92/LayerShifter/issues
 repository=https://github.com/brych92/LayerShifter
-icon=pl_icon.png
-experimental=true
 homepage=https://github.com/brych92/LayerShifter
+
+icon=pl_icon.png
+qgisMinimumVersion=3.16
+
 changelog=
  Version 0.1:
- * Реліз для тестування
+ * Alfa

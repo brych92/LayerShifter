@@ -62,5 +62,5 @@ if __name__ == '__main__':
     
     zipf.close()
 
-    print(f'Created {zip_file_path}')
+    print(f'\r\n\r\nCreated {zip_file_path}\r\n\r\n')
 
